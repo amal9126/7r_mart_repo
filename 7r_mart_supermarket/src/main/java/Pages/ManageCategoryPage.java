@@ -20,7 +20,7 @@ public class ManageCategoryPage
 	PageFactory.initElements(driver,this);
 	}
 
-@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category']")WebElement moreinfo;
+//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category']")WebElement moreInfoManageCategoryPage;
 @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newbutton;	
 @FindBy(xpath="//input[@id='category']")WebElement category;
 @FindBy(xpath="//li[@id='134-selectable']")WebElement selectgroup;
@@ -30,23 +30,26 @@ public class ManageCategoryPage
 
 
 
-public void moreinfo()
+/* public void moreInfoManageCategoryPage()
 {
-	moreinfo.click();
-}
-public void newbutton()
+	moreInfoManageCategoryPage.click();
+} */
+public ManageCategoryPage newbutton()
 {
 	newbutton.click();
+	return this;
 }
-public void category()
+public ManageCategoryPage category()
 {
 	category.sendKeys("Shoes");
+	return this;
 }
-public void selectgroup()
+public ManageCategoryPage selectgroup()
 {
 	selectgroup.click();
+	return this;
 }
-public void choosefile() throws AWTException
+public ManageCategoryPage choosefile() throws AWTException
 {
 	Actions actions=new Actions(driver);
 	actions.click(choosefile).build().perform();
@@ -65,11 +68,13 @@ public void choosefile() throws AWTException
 	
 	robot.keyPress(KeyEvent.VK_ENTER); 
 	robot.keyRelease(KeyEvent.VK_ENTER);
+	return this;
 }
-public void save()
+public ManageCategoryPage save()
 {
 	Actions actions=new Actions(driver);
 	actions.click(save).build().perform();
+	return this;
 }
 public boolean alert()
 {

@@ -14,7 +14,7 @@ public class AdminUsersPage {
 		
 	}
 
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and contains(@class,'small-box-footer')]")WebElement moreinfo;
+	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and contains(@class,'small-box-footer')]")WebElement moreInfoAdminUserPage;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement createnew;
 	@FindBy(xpath="//input[@id='username']")WebElement username;
 	@FindBy(xpath="//input[@id='password']")WebElement password;
@@ -25,32 +25,37 @@ public class AdminUsersPage {
 
 
 
-public void moreInfo()
+/* public void moreInfoAdminUserPage()
 {
-	moreinfo.click();
-}
+	moreInfoAdminUserPage.click();
+} */
 
-public void createnew()
+public AdminUsersPage createnew()
 {
 	createnew.click();
+	return this;
 }
-public void username(String enterusername)
+public AdminUsersPage username(String enterusername)
 {
 	username.sendKeys(enterusername);
+	return this;
 }
-public void password(String enterpassword)
+public AdminUsersPage password(String enterpassword)
 {
 	password.sendKeys(enterpassword);
+	return this;
 }
-public void userType()
+public AdminUsersPage userType()
 {
 	Select select=new Select(selectuser);
 	select.selectByVisibleText("Staff");
 	//
+	return this;
 }
-public void save()
+public AdminUsersPage save()
 {
 	save.click();
+	return this;
 }
 public boolean alert()
 {

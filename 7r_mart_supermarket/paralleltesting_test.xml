@@ -12,7 +12,7 @@
   <parameter name="browser" value="chrome"></parameter>
     <classes>
      <!--  <class name="test_script.AdminUsersTest"/>-->
-      <class name="test_script.ManageContactTest"/>
+      <class name="test_script.AdminUsersTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

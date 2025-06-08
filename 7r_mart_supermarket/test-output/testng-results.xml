@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-03T11:38:04 IST" name="paralleltestingtest" finished-at="2025-06-03T11:38:12 IST" duration-ms="7383">
+  <suite started-at="2025-06-08T10:46:06 IST" name="Suite" finished-at="2025-06-08T10:46:20 IST" duration-ms="13829">
     <groups>
     </groups>
-    <test started-at="2025-06-03T11:38:04 IST" name="Test1" finished-at="2025-06-03T11:38:12 IST" duration-ms="7383">
-      <class name="test_script.ManageContactTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageContactTest@35d019a3]" started-at="2025-06-03T11:38:04 IST" name="browserInitialization" finished-at="2025-06-03T11:38:09 IST" duration-ms="4588" status="PASS">
+    <test started-at="2025-06-08T10:46:06 IST" name="Test" finished-at="2025-06-08T10:46:20 IST" duration-ms="13829">
+      <class name="test_script.ManageNewsTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:06 IST" name="browserInitialization" finished-at="2025-06-08T10:46:10 IST" duration-ms="3769" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="manageContactTest()[pri:0, instance:test_script.ManageContactTest@35d019a3]" started-at="2025-06-03T11:38:09 IST" name="manageContactTest" finished-at="2025-06-03T11:38:12 IST" duration-ms="2741" status="PASS">
+        <test-method signature="isSaveButtonDisplayed()[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:10 IST" name="isSaveButtonDisplayed" finished-at="2025-06-08T10:46:11 IST" duration-ms="1524" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manageContactTest -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageContactTest@35d019a3]" started-at="2025-06-03T11:38:12 IST" name="browserQuit" finished-at="2025-06-03T11:38:12 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- isSaveButtonDisplayed -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:11 IST" name="browserQuit" finished-at="2025-06-08T10:46:11 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manageContactTest status=SUCCESS method=ManageContactTest.manageContactTest()[pri:0, instance:test_script.ManageContactTest@35d019a3] output={null}]]]>
+                <![CDATA[[TestResult name=isSaveButtonDisplayed status=SUCCESS method=ManageNewsTest.isSaveButtonDisplayed()[pri:0, instance:test_script.ManageNewsTest@47caedad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- test_script.ManageContactTest -->
-    </test> <!-- Test1 -->
-    <test started-at="2025-06-03T11:38:04 IST" name="Test2" finished-at="2025-06-03T11:38:12 IST" duration-ms="7383">
-      <class name="test_script.ManageContactTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageContactTest@3eb25e1a]" started-at="2025-06-03T11:38:04 IST" name="browserInitialization" finished-at="2025-06-03T11:38:09 IST" duration-ms="4729" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:11 IST" name="browserInitialization" finished-at="2025-06-08T10:46:14 IST" duration-ms="2580" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,22 +44,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="manageContactTest()[pri:0, instance:test_script.ManageContactTest@3eb25e1a]" started-at="2025-06-03T11:38:09 IST" name="manageContactTest" finished-at="2025-06-03T11:38:12 IST" duration-ms="2602" status="PASS">
+        <test-method signature="manageNewsDelete()[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:14 IST" name="manageNewsDelete" finished-at="2025-06-08T10:46:15 IST" duration-ms="1518" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manageContactTest -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageContactTest@3eb25e1a]" started-at="2025-06-03T11:38:12 IST" name="browserQuit" finished-at="2025-06-03T11:38:12 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- manageNewsDelete -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:15 IST" name="browserQuit" finished-at="2025-06-08T10:46:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manageContactTest status=SUCCESS method=ManageContactTest.manageContactTest()[pri:0, instance:test_script.ManageContactTest@3eb25e1a] output={null}]]]>
+                <![CDATA[[TestResult name=manageNewsDelete status=SUCCESS method=ManageNewsTest.manageNewsDelete()[pri:0, instance:test_script.ManageNewsTest@47caedad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- test_script.ManageContactTest -->
-    </test> <!-- Test2 -->
-  </suite> <!-- paralleltestingtest -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:15 IST" name="browserInitialization" finished-at="2025-06-08T10:46:18 IST" duration-ms="2523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="manageNewsTest()[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:18 IST" name="manageNewsTest" finished-at="2025-06-08T10:46:20 IST" duration-ms="1853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageNewsTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:20 IST" name="browserQuit" finished-at="2025-06-08T10:46:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageNewsTest status=SUCCESS method=ManageNewsTest.manageNewsTest()[pri:0, instance:test_script.ManageNewsTest@47caedad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- test_script.ManageNewsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

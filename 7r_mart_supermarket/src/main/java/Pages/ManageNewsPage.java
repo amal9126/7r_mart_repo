@@ -14,7 +14,7 @@ public class ManageNewsPage
 	}
 
 	
-	@FindBy(xpath="//a[contains(@href, 'uniqassosiates.com/admin/list-news')]")WebElement moreinfo;
+	//@FindBy(xpath="//a[contains(@href, 'uniqassosiates.com/admin/list-news')]")WebElement moreInfoManageNewsPage;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement createnew;
 	@FindBy(xpath="//textarea[@id='news']")WebElement text;
 	@FindBy(xpath="//button[@class='btn btn-danger']")WebElement savebutton;
@@ -23,29 +23,32 @@ public class ManageNewsPage
 	@FindBy(xpath="//a[contains(@href, '/admin/news/delete') and contains(@class, 'btn-danger')]")WebElement deletebutton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement deletealert;
 
-public void moreInfo()
+/* public void moreInfoManageNewsPage()
 {
-	moreinfo.click();
-}
+	moreInfoManageNewsPage.click();
+} */
 
-public void createnew()
+public ManageNewsPage createnew()
 {
 	createnew.click();
+	return this;
 }
-public void text(String entertext)
+public ManageNewsPage text(String entertext)
 {
 	text.sendKeys(entertext);
+	return this;
 }
-public void save()
+public ManageNewsPage save()
 {
-	savebutton.click();	
+	savebutton.click();
+	return this;	
 }
 public boolean alert()
 {
 	return alert.isDisplayed();
 }
 
-public void isSaveButtonDispalyed()
+public ManageNewsPage isSaveButtonDispalyed()
 {
 	if(savebutton.isDisplayed())
 	{
@@ -55,12 +58,14 @@ public void isSaveButtonDispalyed()
 	{
 		System.out.println("save button is not displayed");
 	}
+	return this;
 }
 
-public void deleteNews()
+public ManageNewsPage deleteNews()
 {
 	deletebutton.click();
 	driver.switchTo().alert().accept();
+	return this;
 }
 public boolean deletealert()
 {

@@ -20,19 +20,22 @@ public class LoginPage {
 	
 	
 
-	public void enterTheUsername(String usernamevalue)
+	public LoginPage enterTheUsername(String usernamevalue)
 	{
 		usernameField.sendKeys(usernamevalue);
+		return this;
 	}
 	
-	public void enterThePassword(String passwordvalue)
+	public LoginPage enterThePassword(String passwordvalue)
 	{
 		passwordField.sendKeys(passwordvalue);
+		return this;
 	}
 	
-	public void clickTheSignInButton()
+	public HomePage clickTheSignInButton()
 	{
 		signinField.click();
+		return new HomePage(driver);
 	}
 	
 	public boolean isdashboarddisplay()

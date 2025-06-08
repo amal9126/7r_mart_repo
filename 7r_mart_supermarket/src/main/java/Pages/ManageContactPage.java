@@ -18,7 +18,7 @@ public class ManageContactPage {
 	PageFactory.initElements(driver,this);
 	}
 
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact' and @class='small-box-footer']")WebElement moreinfo;
+//	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact' and @class='small-box-footer']")WebElement moreInfoManageContactPage;
 	@FindBy(xpath="//a[@class='btn btn-sm btn btn-primary btncss']")WebElement actionbutton;
 	@FindBy(xpath="//input[@id='email']")WebElement email;
 	@FindBy(xpath="//button[@type='submit' and @name='Update']")WebElement update;
@@ -29,41 +29,47 @@ public class ManageContactPage {
 	@FindBy(xpath="//input[@id='del_limit']")WebElement deliverychargelimit;
 	
 
-public void moreinfo()
+/*public void moreInfoManageContactPage()
 {
-	moreinfo.click();
-}
-public void actionbutton()
+	moreInfoManageContactPage.click();
+} */
+public ManageContactPage actionbutton()
 {
 	actionbutton.click();
+	return this;
 }
-public void phone(String enterphonenumber)
+public ManageContactPage phone(String enterphonenumber)
 {
 	phone.clear();
 	phone.sendKeys(enterphonenumber);
+	return this;
 }
-public void email(String enteremail)
+public ManageContactPage email(String enteremail)
 {
 	email.clear();
 	email.sendKeys(enteremail);
+	return this;
 }
-public void address(String enteraddress)
+public ManageContactPage address(String enteraddress)
 {
 	address.clear();
 	address.sendKeys(enteraddress);
+	return this;
 }
 
-public void deliverytime(String enterdeliverytime)
+public ManageContactPage deliverytime(String enterdeliverytime)
 {
 	deliverytime.clear();
 	deliverytime.sendKeys(enterdeliverytime);
+	return this;
 }
-public void deliverychargelimit(String enterdeliverychargelimit)
+public ManageContactPage deliverychargelimit(String enterdeliverychargelimit)
 {
 	deliverychargelimit.clear();
 	deliverychargelimit.sendKeys(enterdeliverychargelimit);
+	return this;
 }
-public void update()
+public ManageContactPage update()
 {
 	//JavascriptExecutor js=(JavascriptExecutor)driver;
 	//js.executeScript("arguments[0].click();","update");
@@ -72,6 +78,7 @@ public void update()
 	Actions actions=new Actions(driver);
 	actions.click(update).build().perform();
 	//update.click();
+	return this;
 }
 public boolean alert()
 {

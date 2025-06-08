@@ -3,11 +3,11 @@ package test_script;
 import org.testng.annotations.Test;
 
 import Pages.LoginPage;
-import Pages.LogoutPage;
+import Pages.HomePage;
 
-public class LogoutTest extends Base{
+public class HomePageTest extends Base{
 
-@Test
+@Test (description="verify whether the user is able to logout successfully")
 public void logouttest()
 {
 	String name="admin";
@@ -18,7 +18,7 @@ public void logouttest()
 	loginpage.enterThePassword(password);
 	loginpage.clickTheSignInButton();
 	
-	LogoutPage logoutpage=new LogoutPage(driver);
+	HomePage logoutpage=new HomePage(driver);
 	logoutpage.userlogo();
 	
 	logoutpage.logout();

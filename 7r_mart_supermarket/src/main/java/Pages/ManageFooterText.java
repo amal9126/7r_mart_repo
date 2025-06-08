@@ -13,7 +13,7 @@ public class ManageFooterText
 		PageFactory.initElements(driver,this);
 	}
 
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext' and @class='small-box-footer']")WebElement moreinfo;
+	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext' and @class='small-box-footer']")WebElement moreInfoManageFooterText;
 	@FindBy(xpath="//a[contains(@href,'admin/Footertext/edit?edit=1')]")WebElement actionbutton;
 	@FindBy(xpath="//textarea[@id='content']")WebElement enteraddress;
 	@FindBy(xpath="//input[@id='email']")WebElement enteremail;
@@ -23,39 +23,44 @@ public class ManageFooterText
 	
 
 
-public void moreinfo()
+/* public void moreInfoManageFooterText()
 {
-	moreinfo.click();
-}	
-public void actionbutton()
+	moreInfoManageFooterText.click();
+}	*/
+public ManageFooterText actionbutton()
 {
 	actionbutton.click();
+	return this;
 }
-public void address()
+public ManageFooterText address()
 {
 	enteraddress.clear();
 	enteraddress.sendKeys("kzm,Trivandrum");
+	return this;
 }
-public void email()
+public ManageFooterText email()
 {
 	enteremail.clear();
 	enteremail.sendKeys("amal@gmail.com");
+	return this;
 }
-public void phone()
+public ManageFooterText phone()
 {
 	enterphone.clear();
 	enterphone.sendKeys("0987654321");
+	return this;
 }
-public void update()
+public ManageFooterText update()
 {
 	updatebutton.click();
+	return this;
 }
 public boolean alert()
 {
 	return alert.isDisplayed();
 }
 
-public void isUpdateButtonDisplayed()
+public ManageFooterText isUpdateButtonDisplayed()
 {
 	if(updatebutton.isDisplayed())
 	{
@@ -65,5 +70,6 @@ public void isUpdateButtonDisplayed()
 	{
 		System.out.println("update button is not displayed");
 	}
+	return this;
 }
 }

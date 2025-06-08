@@ -5,12 +5,16 @@ import java.awt.AWTException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.ManageCategoryPage;
+import constant.Constant;
 
 public class ManageCategoryTest extends Base{
+	ManageCategoryPage managecategorypage;
+	HomePage homepage;
 
-@Test
+@Test (description="verify whether the user is able to add new category in the manage category page")
 public void manageCategoryTest() throws AWTException
 {
 	String name="admin";
@@ -19,17 +23,17 @@ public void manageCategoryTest() throws AWTException
 	LoginPage loginpage=new LoginPage(driver);
 	loginpage.enterTheUsername(name);
 	loginpage.enterThePassword(password);
-	loginpage.clickTheSignInButton();
+	homepage=loginpage.clickTheSignInButton();
 	
-	ManageCategoryPage managecategorypage=new ManageCategoryPage(driver);
-	managecategorypage.moreinfo();
-	managecategorypage.newbutton();
-	managecategorypage.category();
-	managecategorypage.selectgroup();
-	managecategorypage.choosefile();
-	managecategorypage.save();
+	//ManageCategoryPage managecategorypage=new ManageCategoryPage(driver);
+	managecategorypage=homepage.moreInfoManageCategoryPage();
+	managecategorypage.newbutton().category().selectgroup().choosefile().save();
+	//managecategorypage.category();
+	//managecategorypage.selectgroup();
+	//managecategorypage.choosefile();
+	//managecategorypage.save();
 	boolean isalertdisplayed=managecategorypage.alert();
-	Assert.assertTrue(isalertdisplayed);
+	Assert.assertTrue(isalertdisplayed,Constant.CREATECATEGORYERROR);
 	
 }
 }
