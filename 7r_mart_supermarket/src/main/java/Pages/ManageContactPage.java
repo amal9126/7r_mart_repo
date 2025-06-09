@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.PageUtility;
+
 public class ManageContactPage {
 	public WebDriver driver;
 	public ManageContactPage(WebDriver driver) {
@@ -75,9 +77,11 @@ public ManageContactPage update()
 	//js.executeScript("arguments[0].click();","update");
 	//WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	//wait.until(ExpectedConditions.elementToBeClickable(update));
-	Actions actions=new Actions(driver);
-	actions.click(update).build().perform();
+	//Actions actions=new Actions(driver);
+	//actions.click(update).build().perform();
 	//update.click();
+	PageUtility pageutility=new PageUtility();
+	pageutility.click(driver, update);
 	return this;
 }
 public boolean alert()

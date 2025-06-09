@@ -17,7 +17,7 @@ public class FileUploadUtility {
 		StringSelection ss = new StringSelection(path);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		Robot robot = new Robot();
-		robot.delay(250);
+		robot.delay(2500);
 	    robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);

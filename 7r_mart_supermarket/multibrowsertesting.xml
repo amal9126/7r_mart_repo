@@ -27,7 +27,7 @@
       <class name="test_script.ManageNewsTest"/>  
       <class name="test_script.ManageFooterTextTest"/> 
       <class name="test_script.ManageCategoryTest"/>  -->
-      <class name="test_script.ManageContactTest"/>
+      <class name="test_script.AdminUsersTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

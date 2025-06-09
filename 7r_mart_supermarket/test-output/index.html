@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" panel-name="suite-paralleltestingmethods" class="navigator-link">
+              <span class="suite-name border-failed">paralleltestingmethods</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\AMAL RAJ\git\7r_mart_repo\7r_mart_supermarket\testng.xml</span>
+                  <a href="#" panel-name="test-xml-paralleltestingmethods" class="navigator-link ">
+                    <span>C:\Users\AMAL RAJ\git\7r_mart_repo\7r_mart_supermarket\paralleltesting_method.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-paralleltestingmethods" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-paralleltestingmethods" class="navigator-link ">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-paralleltestingmethods" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-paralleltestingmethods" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-paralleltestingmethods" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-paralleltestingmethods" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,31 +92,49 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-paralleltestingmethods" class="hide-methods failed suite-paralleltestingmethods"> (hide)</a> <!-- hide-methods failed suite-paralleltestingmethods -->
+                      <a href="#" panel-name="suite-paralleltestingmethods" class="show-methods failed suite-paralleltestingmethods"> (show)</a> <!-- show-methods failed suite-paralleltestingmethods -->
+                    </span>
+                    <div class="method-list-content failed suite-paralleltestingmethods">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-paralleltestingmethods" title="test_script.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword">verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-paralleltestingmethods -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-paralleltestingmethods" class="hide-methods skipped suite-paralleltestingmethods"> (hide)</a> <!-- hide-methods skipped suite-paralleltestingmethods -->
+                      <a href="#" panel-name="suite-paralleltestingmethods" class="show-methods skipped suite-paralleltestingmethods"> (show)</a> <!-- show-methods skipped suite-paralleltestingmethods -->
+                    </span>
+                    <div class="method-list-content skipped suite-paralleltestingmethods">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-paralleltestingmethods" title="test_script.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword">verifyWhetherUserIsAbleToLoginWithValidUsernamePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-paralleltestingmethods -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-paralleltestingmethods" class="hide-methods passed suite-paralleltestingmethods"> (hide)</a> <!-- hide-methods passed suite-paralleltestingmethods -->
+                      <a href="#" panel-name="suite-paralleltestingmethods" class="show-methods passed suite-paralleltestingmethods"> (show)</a> <!-- show-methods passed suite-paralleltestingmethods -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-paralleltestingmethods">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.ManageNewsTest" class="method navigator-link" hash-for-method="isSaveButtonDisplayed">isSaveButtonDisplayed</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-paralleltestingmethods" title="test_script.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword">verifyWhetherUserIsAbleToLoginWithValidUsernamePassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsDelete">manageNewsDelete</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest">manageNewsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-paralleltestingmethods -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,62 +145,135 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-paralleltestingmethods" class="panel paralleltestingmethods">
+          <div class="suite-paralleltestingmethods-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test_script.ManageNewsTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">test_script.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="isSaveButtonDisplayed">
-                  </a> <!-- isSaveButtonDisplayed -->
-                  <span class="method-name">isSaveButtonDisplayed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageNewsDelete">
-                  </a> <!-- manageNewsDelete -->
-                  <span class="method-name">manageNewsDelete</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageNewsTest">
-                  </a> <!-- manageNewsTest -->
-                  <span class="method-name">manageNewsTest</span>
+                  <a name="verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword</span>
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at utilities.ExcelUtility.getStringData(ExcelUtility.java:22)
+	at test_script.LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword(LoginTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0X3970000
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+	... 21 more
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify whether the user is able to login to the website with correct username and incorrect password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-paralleltestingmethods-class-failed -->
+          <div class="suite-paralleltestingmethods-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test_script.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginWithValidUsernamePassword -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidUsernamePassword</span>
+                  <div class="stack-trace">java.io.IOException: Stream Closed
+	at java.base/java.io.FileInputStream.available0(Native Method)
+	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at utilities.ExcelUtility.getStringData(ExcelUtility.java:22)
+	at test_script.LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernamePassword(LoginTest.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify whether the user is able to login to the website with correct username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-paralleltestingmethods-class-skipped -->
+          <div class="suite-paralleltestingmethods-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_script.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginWithValidUsernamePassword -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidUsernamePassword</span>
+                  <em>
+(verify whether the user is able to login to the website with correct username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-paralleltestingmethods-class-passed -->
+        </div> <!-- panel paralleltestingmethods -->
+        <div panel-name="test-xml-paralleltestingmethods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AMAL RAJ\git\7r_mart_repo\7r_mart_supermarket\testng.xml</span>
+            <span class="header-content">C:\Users\AMAL RAJ\git\7r_mart_repo\7r_mart_supermarket\paralleltesting_method.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;generateReport.Listeners&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;paralleltestingmethods&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test_script.ManageNewsTest&quot;/&gt;
+      &lt;class name=&quot;test_script.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyWhetherUserIsAbleToLoginWithValidUsernamePassword&quot;/&gt;
+          &lt;include name=&quot;verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- test_script.LoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+&lt;/suite&gt; &lt;!-- paralleltestingmethods --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-paralleltestingmethods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for paralleltestingmethods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -192,22 +283,30 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-paralleltestingmethods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for paralleltestingmethods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToLoginWithValidUsernamePassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-paralleltestingmethods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for paralleltestingmethods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_paralleltestingmethods');
+function tableData_paralleltestingmethods() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -215,83 +314,94 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'manageNewsTest')
-data.setCell(0, 2, 'test_script.ManageNewsTest')
-data.setCell(0, 3, 1853);
+data.setCell(0, 1, 'verifyWhetherUserIsAbleToLoginWithValidUsernamePassword')
+data.setCell(0, 2, 'test_script.LoginTest')
+data.setCell(0, 3, 869);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'isSaveButtonDisplayed')
-data.setCell(1, 2, 'test_script.ManageNewsTest')
-data.setCell(1, 3, 1524);
+data.setCell(1, 1, 'verifyWhetherUserIsAbleToLoginWithValidUsernamePassword')
+data.setCell(1, 2, 'test_script.LoginTest')
+data.setCell(1, 3, 115);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'manageNewsDelete')
-data.setCell(2, 2, 'test_script.ManageNewsTest')
-data.setCell(2, 3, 1518);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(2, 1, 'verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword')
+data.setCell(2, 2, 'test_script.LoginTest')
+data.setCell(2, 3, 84);
+window.suiteTableData['paralleltestingmethods']= { tableData: data, tableDiv: 'times-div-paralleltestingmethods'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-paralleltestingmethods">
+              </div> <!-- times-div-paralleltestingmethods -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-paralleltestingmethods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for paralleltestingmethods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-paralleltestingmethods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test_script.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndInvalidPassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-paralleltestingmethods" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test_script.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test_script.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitialization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">isSaveButtonDisplayed</span>
-                <span class="method-start">3771 ms</span>
+                <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidUsernamePassword</span>
+                <span class="method-start">2509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword</span>
+                <span class="method-start">2509 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=isSaveButtonDisplayed status=SUCCESS method=ManageNewsTest.isSaveButtonDisplayed()[...)</span>
-                <span class="method-start">5302 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword status=FAILURE me...)</span>
+                <span class="method-start">2596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToLoginWithValidUsernamePassword status=SKIP method=LoginTes...)</span>
+                <span class="method-start">2626 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitialization(chrome)</span>
-                <span class="method-start">5306 ms</span>
+                <span class="method-start">2627 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">manageNewsDelete</span>
-                <span class="method-start">7886 ms</span>
+                <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidUsernamePassword</span>
+                <span class="method-start">5081 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=manageNewsDelete status=SUCCESS method=ManageNewsTest.manageNewsDelete()[pri:0, ins...)</span>
-                <span class="method-start">9406 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserInitialization(chrome)</span>
-                <span class="method-start">9407 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">manageNewsTest</span>
-                <span class="method-start">11931 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=manageNewsTest status=SUCCESS method=ManageNewsTest.manageNewsTest()[pri:0, instanc...)</span>
-                <span class="method-start">13786 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToLoginWithValidUsernamePassword status=SUCCESS method=Login...)</span>
+                <span class="method-start">5951 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -11,7 +11,7 @@
       <class name="test_script.ManageNewsTest"/>  
       <class name="test_script.ManageFooterTextTest"/> 
       <class name="test_script.ManageCategoryTest"/>  -->
-      <class name="test_script.LoginTest"/>
+      <class name="test_script.AdminUsersTest"/>
     </classes>
   </test> <!-- Test -->
   
@@ -25,7 +25,7 @@
       <class name="test_script.ManageNewsTest"/>  
       <class name="test_script.ManageFooterTextTest"/> 
       <class name="test_script.ManageCategoryTest"/>  -->
-      <class name="test_script.LoginTest"/>
+      <class name="test_script.ManageNewsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

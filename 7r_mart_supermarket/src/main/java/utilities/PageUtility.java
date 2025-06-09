@@ -58,7 +58,7 @@ public class PageUtility {
 
 	}
 
-	public void click(WebDriver driver,WebElement element)
+	public void jsclick(WebDriver driver,WebElement element)
 
 	{
 
@@ -105,6 +105,15 @@ public class PageUtility {
 		Actions actions=new Actions(driver);
 
 		actions.doubleClick(element1).build().perform();
+
+	}
+	public void click(WebDriver driver,WebElement element1)
+
+	{
+
+		Actions actions=new Actions(driver);
+
+		actions.click(element1).build().perform();
 
 	}
 

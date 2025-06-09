@@ -5,10 +5,11 @@
     <classes>
       <class name="test_script.ManageNewsTest">
         <methods>
-          <include name="manageNewsDelete"/>
+          <include name="verifyWhetherTheSaveButtonIsDisplayedOnTheManageNews"/>
+          <include name="verifyWhetherUserIsAbleToDeleteNewsOnManageNews"/>
           <include name="browserQuit"/>
           <include name="browserInitialization"/>
-          <include name="manageNewsTest"/>
+          <include name="verifyWhetherUserIsAbleToCreateNewNewsOnManageNews"/>
         </methods>
       </class> <!-- test_script.ManageNewsTest -->
     </classes>

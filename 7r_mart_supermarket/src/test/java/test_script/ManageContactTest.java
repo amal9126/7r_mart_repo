@@ -1,5 +1,7 @@
 package test_script;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,19 +9,22 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.ManageContactPage;
 import constant.Constant;
+import utilities.ExcelUtility;
 
 public class ManageContactTest extends Base{
 	ManageContactPage managecontactpage;
 	HomePage homepage;
 @Test (description="verify whether the user is able to add new contact information in the manage contact page")
-public void manageContactTest()
+public void verifyWhetherUserIsAbleToCreateNewContactOnManageContact() throws IOException
 {
-	String name="admin";
-	String password="admin";
-
+	//String name="admin";
+	//String password="admin";
+	
+	String name=ExcelUtility.getStringData(1, 0, "loginpage");
+	String password=ExcelUtility.getStringData(1, 1, "loginpage");
 	LoginPage loginpage=new LoginPage(driver);
-	loginpage.enterTheUsername(name);
-	loginpage.enterThePassword(password);
+	loginpage.enterTheUsername(name).enterThePassword(password);
+	//loginpage.enterThePassword(password);
 	homepage=loginpage.clickTheSignInButton();
 	//ManageContactPage managecontactpage=new ManageContactPage(driver);
 	String mail="varsha1234@gmail.com";

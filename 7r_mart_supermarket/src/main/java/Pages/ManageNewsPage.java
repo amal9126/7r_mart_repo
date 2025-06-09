@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.WaitUtility;
+
 public class ManageNewsPage
 {
 	public WebDriver driver;
@@ -40,6 +42,8 @@ public ManageNewsPage text(String entertext)
 }
 public ManageNewsPage save()
 {
+	WaitUtility waitutility=new WaitUtility();
+	waitutility.waitForElementToBeClickable(driver, savebutton);
 	savebutton.click();
 	return this;	
 }

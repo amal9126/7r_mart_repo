@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-08T10:46:06 IST" name="Suite" finished-at="2025-06-08T10:46:20 IST" duration-ms="13829">
+  <suite started-at="2025-06-09T13:05:13 IST" name="paralleltestingmethods" finished-at="2025-06-09T13:05:19 IST" duration-ms="5980">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernamePassword()[pri:0, instance:test_script.LoginTest@38d8f54a]" name="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword" class="test_script.LoginTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-06-08T10:46:06 IST" name="Test" finished-at="2025-06-08T10:46:20 IST" duration-ms="13829">
-      <class name="test_script.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:06 IST" name="browserInitialization" finished-at="2025-06-08T10:46:10 IST" duration-ms="3769" status="PASS">
+    <test started-at="2025-06-09T13:05:13 IST" name="Test" finished-at="2025-06-09T13:05:19 IST" duration-ms="5980">
+      <class name="test_script.LoginTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:13 IST" name="browserInitialization" finished-at="2025-06-09T13:05:15 IST" duration-ms="2508" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="isSaveButtonDisplayed()[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:10 IST" name="isSaveButtonDisplayed" finished-at="2025-06-08T10:46:11 IST" duration-ms="1524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isSaveButtonDisplayed -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:11 IST" name="browserQuit" finished-at="2025-06-08T10:46:11 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=isSaveButtonDisplayed status=SUCCESS method=ManageNewsTest.isSaveButtonDisplayed()[pri:0, instance:test_script.ManageNewsTest@47caedad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:11 IST" name="browserInitialization" finished-at="2025-06-08T10:46:14 IST" duration-ms="2580" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:13 IST" name="browserInitialization" finished-at="2025-06-09T13:05:15 IST" duration-ms="2508" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,22 +32,118 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="manageNewsDelete()[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:14 IST" name="manageNewsDelete" finished-at="2025-06-08T10:46:15 IST" duration-ms="1518" status="PASS">
+        <test-method signature="verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword()[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:15 IST" name="verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword" description="verify whether the user is able to login to the website with correct username and incorrect password" finished-at="2025-06-09T13:05:15 IST" duration-ms="84" status="FAIL">
+          <exception class="org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException">
+            <message>
+              <![CDATA[No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:22)
+at test_script.LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword(LoginTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0X3970000
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manageNewsDelete -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:15 IST" name="browserQuit" finished-at="2025-06-08T10:46:15 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword -->
+        <test-method retried="true" signature="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword()[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:15 IST" name="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword" description="verify whether the user is able to login to the website with correct username and password" finished-at="2025-06-09T13:05:15 IST" duration-ms="115" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Stream Closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Stream Closed
+at java.base/java.io.FileInputStream.available0(Native Method)
+at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
+at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
+at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
+at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.<init>(ZipArchiveFakeEntry.java:82)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:98)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:22)
+at test_script.LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernamePassword(LoginTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherUserIsAbleToLoginWithValidUsernamePassword -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:15 IST" name="browserQuit" finished-at="2025-06-09T13:05:16 IST" duration-ms="135" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manageNewsDelete status=SUCCESS method=ManageNewsTest.manageNewsDelete()[pri:0, instance:test_script.ManageNewsTest@47caedad] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword status=FAILURE method=LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword()[pri:0, instance:test_script.LoginTest@38d8f54a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:15 IST" name="browserInitialization" finished-at="2025-06-08T10:46:18 IST" duration-ms="2523" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:15 IST" name="browserQuit" finished-at="2025-06-09T13:05:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToLoginWithValidUsernamePassword status=SKIP method=LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernamePassword()[pri:0, instance:test_script.LoginTest@38d8f54a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:15 IST" name="browserInitialization" finished-at="2025-06-09T13:05:18 IST" duration-ms="2454" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,22 +154,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="manageNewsTest()[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:18 IST" name="manageNewsTest" finished-at="2025-06-08T10:46:20 IST" duration-ms="1853" status="PASS">
+        <test-method signature="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword()[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:18 IST" name="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword" description="verify whether the user is able to login to the website with correct username and password" finished-at="2025-06-09T13:05:19 IST" duration-ms="869" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manageNewsTest -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@47caedad]" started-at="2025-06-08T10:46:20 IST" name="browserQuit" finished-at="2025-06-08T10:46:20 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyWhetherUserIsAbleToLoginWithValidUsernamePassword -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.LoginTest@38d8f54a]" started-at="2025-06-09T13:05:19 IST" name="browserQuit" finished-at="2025-06-09T13:05:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manageNewsTest status=SUCCESS method=ManageNewsTest.manageNewsTest()[pri:0, instance:test_script.ManageNewsTest@47caedad] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToLoginWithValidUsernamePassword status=SUCCESS method=LoginTest.verifyWhetherUserIsAbleToLoginWithValidUsernamePassword()[pri:0, instance:test_script.LoginTest@38d8f54a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- test_script.ManageNewsTest -->
+      </class> <!-- test_script.LoginTest -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- paralleltestingmethods -->
 </testng-results>

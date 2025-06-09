@@ -12,6 +12,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import constant.Constant;
+import utilities.FileUploadUtility;
+import utilities.PageUtility;
+
 public class ManageCategoryPage 
 {
 	public WebDriver driver;
@@ -51,7 +55,10 @@ public ManageCategoryPage selectgroup()
 }
 public ManageCategoryPage choosefile() throws AWTException
 {
-	Actions actions=new Actions(driver);
+	PageUtility pageutility=new PageUtility();
+	pageutility.click(driver, choosefile);
+	
+	/*Actions actions=new Actions(driver);
 	actions.click(choosefile).build().perform();
 	
 	StringSelection stringselection=new StringSelection("C:\\Users\\AMAL RAJ\\Downloads\\shoes.jpg");
@@ -67,13 +74,19 @@ public ManageCategoryPage choosefile() throws AWTException
 	robot.keyRelease(KeyEvent.VK_V);
 	
 	robot.keyPress(KeyEvent.VK_ENTER); 
-	robot.keyRelease(KeyEvent.VK_ENTER);
+	robot.keyRelease(KeyEvent.VK_ENTER); */
+	//String filePath = "C:\\Users\\AMAL RAJ\\Downloads\\shoes.jpg";
+	String filePath =Constant.IMAGEDATAFILE;
+	FileUploadUtility fileuploadutility = new FileUploadUtility();
+    fileuploadutility.fileuploadUsingRobertClass(choosefile, filePath);
 	return this;
 }
 public ManageCategoryPage save()
 {
-	Actions actions=new Actions(driver);
-	actions.click(save).build().perform();
+	/*Actions actions=new Actions(driver);
+	actions.click(save).build().perform();  */
+	PageUtility pageutility=new PageUtility();
+	pageutility.click(driver, save);
 	return this;
 }
 public boolean alert()

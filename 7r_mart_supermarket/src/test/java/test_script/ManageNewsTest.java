@@ -1,5 +1,7 @@
 package test_script;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,19 +9,22 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.ManageNewsPage;
 import constant.Constant;
+import utilities.ExcelUtility;
 
 public class ManageNewsTest extends Base{
 	ManageNewsPage managenewspage;
 	HomePage homepage;
 @Test (description="verify whether the user is able to add new news information in the manage news page")
-	public void manageNewsTest()
+	public void verifyWhetherUserIsAbleToCreateNewNewsOnManageNews() throws IOException
 	{
-		String name="admin";
-		String password="admin";
-
+		//String name="admin";
+		//String password="admin";
+		
+		String name=ExcelUtility.getStringData(1, 0, "loginpage");
+		String password=ExcelUtility.getStringData(1, 1, "loginpage");
 		LoginPage loginpage=new LoginPage(driver);
-		loginpage.enterTheUsername(name);
-		loginpage.enterThePassword(password);
+		loginpage.enterTheUsername(name).enterThePassword(password);
+		//loginpage.enterThePassword(password);
 		homepage=loginpage.clickTheSignInButton();
 		//ManageNewsPage managenewspage=new ManageNewsPage(driver);
 		String news="new product launch";
@@ -33,11 +38,13 @@ public class ManageNewsTest extends Base{
 	}
 
 @Test (description="verify whether the save button is displayed in the manage news page")
-public void isSaveButtonDisplayed()
+public void verifyWhetherTheSaveButtonIsDisplayedOnTheManageNews() throws IOException
 {
-	String name="admin";
-	String password="admin";
-
+	//String name="admin";
+	//String password="admin";
+	
+	String name=ExcelUtility.getStringData(1, 0, "loginpage");
+	String password=ExcelUtility.getStringData(1, 1, "loginpage");
 	LoginPage loginpage=new LoginPage(driver);
 	loginpage.enterTheUsername(name);
 	loginpage.enterThePassword(password);
@@ -50,12 +57,14 @@ public void isSaveButtonDisplayed()
 }
 
 @Test (description="verify whether the user is able to delete a news in the manage news page")
-	public void manageNewsDelete()
+	public void verifyWhetherUserIsAbleToDeleteNewsOnManageNews() throws IOException
 	{
 		
-		String name="admin";
-		String password="admin";
-
+		//String name="admin";
+		//String password="admin";
+		
+		String name=ExcelUtility.getStringData(1, 0, "loginpage");
+		String password=ExcelUtility.getStringData(1, 1, "loginpage");
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterTheUsername(name);
 		loginpage.enterThePassword(password);

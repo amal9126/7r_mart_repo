@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test_script.ManageCategoryTest">
+      <class name="test_script.AdminUsersTest">
         <methods>
-          <include name="manageCategoryTest"/>
+          <include name="verifyWhetherUserIsAbleToCreateNewAdminUser"/>
           <include name="browserQuit"/>
           <include name="browserInitialization"/>
         </methods>
-      </class> <!-- test_script.ManageCategoryTest -->
+      </class> <!-- test_script.AdminUsersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

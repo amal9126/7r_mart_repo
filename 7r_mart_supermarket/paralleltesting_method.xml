@@ -7,8 +7,8 @@
 
 			<class name="test_script.LoginTest">
 				<methods>
-					<include name="logintest"></include>
-					<include name="logintest1"></include>
+					<include name="verifyWhetherUserIsAbleToLoginWithValidUsernamePassword"></include>
+					<include name="verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword"></include>
 
 				</methods>
 			</class>

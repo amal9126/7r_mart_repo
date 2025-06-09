@@ -7,8 +7,9 @@
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-    
     <class name="test_script.ManageNewsTest">
+    
+  <!--   <class name="test_script.ManageNewsTest">  -->
     <!--  <class name="test_script.AdminUsersTest"/> -->
      <!-- <class name="test_script.LogoutTest"/> -->
    <!--   <class name="test_script.ManageContactTest"/>

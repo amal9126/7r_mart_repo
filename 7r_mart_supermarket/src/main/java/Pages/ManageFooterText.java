@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.WaitUtility;
+
 public class ManageFooterText
 {
 	public WebDriver driver;
@@ -52,6 +54,8 @@ public ManageFooterText phone()
 }
 public ManageFooterText update()
 {
+	WaitUtility waitutility=new WaitUtility();
+	waitutility.waitForElementToBeClickable(driver, updatebutton);
 	updatebutton.click();
 	return this;
 }

@@ -6,12 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import utilities.PageUtility;
+
 public class AdminUsersPage {
 	public WebDriver driver;
 	public AdminUsersPage(WebDriver driver) {
 	this.driver=driver;
-	PageFactory.initElements(driver,this);
-		
+	PageFactory.initElements(driver,this);		
 	}
 
 	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and contains(@class,'small-box-footer')]")WebElement moreInfoAdminUserPage;
@@ -22,8 +23,6 @@ public class AdminUsersPage {
 	@FindBy(xpath="//button[@name='Create']")WebElement save;
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alert;
 	
-
-
 
 /* public void moreInfoAdminUserPage()
 {
@@ -47,9 +46,10 @@ public AdminUsersPage password(String enterpassword)
 }
 public AdminUsersPage userType()
 {
-	Select select=new Select(selectuser);
-	select.selectByVisibleText("Staff");
-	//
+	PageUtility pageutility=new PageUtility();
+	pageutility.selectByVisibleText(selectuser, "Staff");
+	//Select select=new Select(selectuser);
+	//select.selectByVisibleText("Staff");
 	return this;
 }
 public AdminUsersPage save()
