@@ -17,43 +17,40 @@ import utilities.WaitUtility;
 public class Base {
 
 	public WebDriver driver;
-	
-	@BeforeMethod (alwaysRun=true)
+
+	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
-	public void browserInitialization(String browser) throws Exception
-		{
-		    //driver= new ChromeDriver();
-			if (browser.equalsIgnoreCase("chrome"))
-				{
-				driver= new ChromeDriver();
-				}
-			else if (browser.equalsIgnoreCase("edge"))
-			{
-				driver=new EdgeDriver();
-			}
-			else 
-			{
-				throw new Exception("invalid");
-			}
-			//WaitUtility.IMPLICIT_WAIT;
-			driver.get("https://groceryapp.uniqassosiates.com/admin");
-			//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  IMPLICIT WAIT
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICIT_WAIT));  //IMPLICIT WAIT USING WAIT UTILITY
-			driver.manage().window().maximize();	
+	public void browserInitialization(String browser) throws Exception {
+		// driver= new ChromeDriver();
+		if (browser.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		} else if (browser.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		} else {
+			throw new Exception("invalid");
 		}
-	@AfterMethod (alwaysRun=true)
-	//*public void quitAndClose()
-	//	{
-			//driver.quit();
-		//	driver.close();	
-	
-	//	}
-	
-	public void browserQuit(ITestResult iTestResult) throws IOException {  
- 		if (iTestResult.getStatus() == ITestResult.FAILURE) {  
- 			ScreenShotUtility scrShot = new ScreenShotUtility();  
- 			scrShot.getScreenShot(driver, iTestResult.getName());  
- 		} 
-  
- 	}
+		// WaitUtility.IMPLICIT_WAIT;
+		driver.get("https://groceryapp.uniqassosiates.com/admin");
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); IMPLICIT
+		// WAIT
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICIT_WAIT)); // IMPLICIT WAIT USING
+																									// WAIT UTILITY
+		driver.manage().window().maximize();
+	}
+
+	@AfterMethod(alwaysRun = true)
+	// *public void quitAndClose()
+	// {
+	// driver.quit();
+	// driver.close();
+
+	// }
+
+	public void browserQuit(ITestResult iTestResult) throws IOException {
+		if (iTestResult.getStatus() == ITestResult.FAILURE) {
+			ScreenShotUtility scrShot = new ScreenShotUtility();
+			scrShot.getScreenShot(driver, iTestResult.getName());
+		}
+
+	}
 }

@@ -7,72 +7,71 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.WaitUtility;
 
-public class ManageNewsPage
-{
+public class ManageNewsPage {
 	public WebDriver driver;
+
 	public ManageNewsPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
-	
-	//@FindBy(xpath="//a[contains(@href, 'uniqassosiates.com/admin/list-news')]")WebElement moreInfoManageNewsPage;
-	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement createnew;
-	@FindBy(xpath="//textarea[@id='news']")WebElement text;
-	@FindBy(xpath="//button[@class='btn btn-danger']")WebElement savebutton;
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
-	
-	@FindBy(xpath="//a[contains(@href, '/admin/news/delete') and contains(@class, 'btn-danger')]")WebElement deletebutton;
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement deletealert;
+	// @FindBy(xpath="//a[contains(@href,
+	// 'uniqassosiates.com/admin/list-news')]")WebElement moreInfoManageNewsPage;
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
+	WebElement createnew;
+	@FindBy(xpath = "//textarea[@id='news']")
+	WebElement text;
+	@FindBy(xpath = "//button[@class='btn btn-danger']")
+	WebElement savebutton;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement alert;
 
-/* public void moreInfoManageNewsPage()
-{
-	moreInfoManageNewsPage.click();
-} */
+	@FindBy(xpath = "//a[contains(@href, '/admin/news/delete') and contains(@class, 'btn-danger')]")
+	WebElement deletebutton;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement deletealert;
 
-public ManageNewsPage createnew()
-{
-	createnew.click();
-	return this;
-}
-public ManageNewsPage text(String entertext)
-{
-	text.sendKeys(entertext);
-	return this;
-}
-public ManageNewsPage save()
-{
-	WaitUtility waitutility=new WaitUtility();
-	waitutility.waitForElementToBeClickable(driver, savebutton);
-	savebutton.click();
-	return this;	
-}
-public boolean alert()
-{
-	return alert.isDisplayed();
-}
+	/*
+	 * public void moreInfoManageNewsPage() { moreInfoManageNewsPage.click(); }
+	 */
 
-public ManageNewsPage isSaveButtonDispalyed()
-{
-	if(savebutton.isDisplayed())
-	{
-		System.out.println("save button is displayed");
+	public ManageNewsPage createnew() {
+		createnew.click();
+		return this;
 	}
-	else
-	{
-		System.out.println("save button is not displayed");
-	}
-	return this;
-}
 
-public ManageNewsPage deleteNews()
-{
-	deletebutton.click();
-	driver.switchTo().alert().accept();
-	return this;
-}
-public boolean deletealert()
-{
-	return deletealert.isDisplayed();
-}
+	public ManageNewsPage text(String entertext) {
+		text.sendKeys(entertext);
+		return this;
+	}
+
+	public ManageNewsPage save() {
+		WaitUtility waitutility = new WaitUtility();
+		waitutility.waitForElementToBeClickable(driver, savebutton);
+		savebutton.click();
+		return this;
+	}
+
+	public boolean isAlertsDisplayMethod() {
+		return alert.isDisplayed();
+	}
+
+	public ManageNewsPage isSaveButtonDispalyed() {
+		if (savebutton.isDisplayed()) {
+			System.out.println("save button is displayed");
+		} else {
+			System.out.println("save button is not displayed");
+		}
+		return this;
+	}
+
+	public ManageNewsPage deleteNews() {
+		deletebutton.click();
+		driver.switchTo().alert().accept();
+		return this;
+	}
+
+	public boolean deletealert() {
+		return deletealert.isDisplayed();
+	}
 }

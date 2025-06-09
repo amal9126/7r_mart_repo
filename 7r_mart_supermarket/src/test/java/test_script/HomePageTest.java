@@ -8,24 +8,23 @@ import Pages.LoginPage;
 import utilities.ExcelUtility;
 import Pages.HomePage;
 
-public class HomePageTest extends Base{
+public class HomePageTest extends Base {
 
-@Test (description="verify whether the user is able to logout successfully")
-public void verifyWhetherUserIsAbleToLogout() throws IOException
-{
-	//String name="admin";
-	//String password="admin";
-	
-	String name=ExcelUtility.getStringData(1, 0, "loginpage");
-	String password=ExcelUtility.getStringData(1, 1, "loginpage");
-	LoginPage loginpage=new LoginPage(driver);
-	loginpage.enterTheUsername(name).enterThePassword(password);
-	//loginpage.enterThePassword(password);
-	loginpage.clickTheSignInButton();
-	
-	HomePage logoutpage=new HomePage(driver);
-	logoutpage.userlogo();
-	
-	logoutpage.logout();
-}
+	@Test(description = "verify whether the user is able to logout successfully")
+	public void verifyWhetherUserIsAbleToLogout() throws IOException {
+		// String name="admin";
+		// String password="admin";
+
+		String name = ExcelUtility.getStringData(1, 0, "loginpage");
+		String password = ExcelUtility.getStringData(1, 1, "loginpage");
+		LoginPage loginpage = new LoginPage(driver);
+		loginpage.enterTheUsername(name).enterThePassword(password);
+		// loginpage.enterThePassword(password);
+		loginpage.clickTheSignInButton();
+
+		HomePage logoutpage = new HomePage(driver);
+		logoutpage.userlogo();
+
+		logoutpage.logout();
+	}
 }
