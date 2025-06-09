@@ -27,7 +27,8 @@ public class ManageNewsTest extends Base {
 		// loginpage.enterThePassword(password);
 		homepage = loginpage.clickTheSignInButton();
 		// ManageNewsPage managenewspage=new ManageNewsPage(driver);
-		String news = "new product launch";
+		//String news = "new product launch";
+		String news=ExcelUtility.getStringData(1, 0, "managenews");
 		managenewspage = homepage.moreInfoManageNewsPage();
 		managenewspage.createnew().text(news).save();
 		// managenewspage.text(news);
