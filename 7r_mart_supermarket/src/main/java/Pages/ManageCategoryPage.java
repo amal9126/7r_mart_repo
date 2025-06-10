@@ -47,8 +47,9 @@ public class ManageCategoryPage {
 		return this;
 	}
 
-	public ManageCategoryPage category() {
-		category.sendKeys("Shoes");
+	public ManageCategoryPage category(String enterproduct) {
+		//category.sendKeys("Shoes");
+		category.sendKeys(enterproduct);
 		return this;
 	}
 

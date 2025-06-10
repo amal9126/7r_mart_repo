@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-09T21:55:38 IST" name="Suite" finished-at="2025-06-09T21:55:55 IST" duration-ms="16112">
+  <suite started-at="2025-06-10T10:10:48 IST" name="Suite" finished-at="2025-06-10T10:10:57 IST" duration-ms="9092">
     <groups>
     </groups>
-    <test started-at="2025-06-09T21:55:38 IST" name="Test" finished-at="2025-06-09T21:55:55 IST" duration-ms="16112">
-      <class name="test_script.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:39 IST" name="browserInitialization" finished-at="2025-06-09T21:55:45 IST" duration-ms="6294" status="PASS">
+    <test started-at="2025-06-10T10:10:48 IST" name="Test" finished-at="2025-06-10T10:10:57 IST" duration-ms="9092">
+      <class name="test_script.ManageCategoryTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageCategoryTest@20b2475a]" started-at="2025-06-10T10:10:48 IST" name="browserInitialization" finished-at="2025-06-10T10:10:52 IST" duration-ms="3392" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,74 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyWhetherTheSaveButtonIsDisplayedOnTheManageNews()[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:45 IST" name="verifyWhetherTheSaveButtonIsDisplayedOnTheManageNews" description="verify whether the save button is displayed in the manage news page" finished-at="2025-06-09T21:55:47 IST" duration-ms="2291" status="PASS">
+        <test-method signature="verifyWhetherUserIsAbleTocreateNewCreategoryOnManageCategory()[pri:0, instance:test_script.ManageCategoryTest@20b2475a]" started-at="2025-06-10T10:10:52 IST" name="verifyWhetherUserIsAbleTocreateNewCreategoryOnManageCategory" description="verify whether the user is able to add new category in the manage category page" finished-at="2025-06-10T10:10:57 IST" duration-ms="5640" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWhetherTheSaveButtonIsDisplayedOnTheManageNews -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:47 IST" name="browserQuit" finished-at="2025-06-09T21:55:47 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyWhetherUserIsAbleTocreateNewCreategoryOnManageCategory -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageCategoryTest@20b2475a]" started-at="2025-06-10T10:10:57 IST" name="browserQuit" finished-at="2025-06-10T10:10:57 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWhetherTheSaveButtonIsDisplayedOnTheManageNews status=SUCCESS method=ManageNewsTest.verifyWhetherTheSaveButtonIsDisplayedOnTheManageNews()[pri:0, instance:test_script.ManageNewsTest@6f15d60e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWhetherUserIsAbleTocreateNewCreategoryOnManageCategory status=SUCCESS method=ManageCategoryTest.verifyWhetherUserIsAbleTocreateNewCreategoryOnManageCategory()[pri:0, instance:test_script.ManageCategoryTest@20b2475a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:47 IST" name="browserInitialization" finished-at="2025-06-09T21:55:49 IST" duration-ms="2194" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyWhetherUserIsAbleToCreateNewNewsOnManageNews()[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:49 IST" name="verifyWhetherUserIsAbleToCreateNewNewsOnManageNews" description="verify whether the user is able to add new news information in the manage news page" finished-at="2025-06-09T21:55:51 IST" duration-ms="1740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherUserIsAbleToCreateNewNewsOnManageNews -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:51 IST" name="browserQuit" finished-at="2025-06-09T21:55:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToCreateNewNewsOnManageNews status=SUCCESS method=ManageNewsTest.verifyWhetherUserIsAbleToCreateNewNewsOnManageNews()[pri:0, instance:test_script.ManageNewsTest@6f15d60e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:51 IST" name="browserInitialization" finished-at="2025-06-09T21:55:53 IST" duration-ms="2194" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyWhetherUserIsAbleToDeleteNewsOnManageNews()[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:53 IST" name="verifyWhetherUserIsAbleToDeleteNewsOnManageNews" description="verify whether the user is able to delete a news in the manage news page" finished-at="2025-06-09T21:55:55 IST" duration-ms="1333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherUserIsAbleToDeleteNewsOnManageNews -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:test_script.ManageNewsTest@6f15d60e]" started-at="2025-06-09T21:55:55 IST" name="browserQuit" finished-at="2025-06-09T21:55:55 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToDeleteNewsOnManageNews status=SUCCESS method=ManageNewsTest.verifyWhetherUserIsAbleToDeleteNewsOnManageNews()[pri:0, instance:test_script.ManageNewsTest@6f15d60e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- test_script.ManageNewsTest -->
+      </class> <!-- test_script.ManageCategoryTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

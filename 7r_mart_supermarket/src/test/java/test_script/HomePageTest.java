@@ -2,13 +2,16 @@ package test_script;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Pages.LoginPage;
+import constant.Constant;
 import utilities.ExcelUtility;
 import Pages.HomePage;
 
 public class HomePageTest extends Base {
+	HomePage homepage;
 
 	@Test(description = "verify whether the user is able to logout successfully")
 	public void verifyWhetherUserIsAbleToLogout() throws IOException {
@@ -26,5 +29,8 @@ public class HomePageTest extends Base {
 		logoutpage.userlogo();
 
 		logoutpage.logout();
+		
+		boolean islogoutdisplayed=homepage.isLogoutDisplayed();
+		Assert.assertTrue(islogoutdisplayed, Constant.LOGOUTDISPLAYEDERRORHOMEPAGE);
 	}
 }

@@ -74,4 +74,7 @@ public class ManageNewsPage {
 	public boolean deletealert() {
 		return deletealert.isDisplayed();
 	}
+	public boolean isSaveButtonDisplayedAlert() {
+		return savebutton.isDisplayed();
+	}
 }

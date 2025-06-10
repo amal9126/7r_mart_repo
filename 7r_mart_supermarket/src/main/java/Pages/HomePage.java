@@ -67,5 +67,7 @@ public class HomePage {
 	public void logout() {
 		logout.click();
 	}
-
+	public boolean isLogoutDisplayed() {
+		return logout.isDisplayed();
+	}
 }

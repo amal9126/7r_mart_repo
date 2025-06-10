@@ -57,5 +57,7 @@ public class ManageFooterTextTest extends Base {
 		managefootertext = homepage.moreInfoManageFooterText();
 		managefootertext.actionbutton().isUpdateButtonDisplayed();
 		// managefootertext.isUpdateButtonDisplayed();
+		boolean isupdatebuttondisplayedalert=managefootertest.isUpdateButtonDispalyedAlert();
+		Assert.assertTrue(isupdatebuttondisplayedalert, Constant.UPDATEBUTTONNOTDISPLAYEDERRORMANAGEFOOTER);
 	}
 }

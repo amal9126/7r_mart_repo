@@ -78,4 +78,7 @@ public class ManageFooterText {
 		}
 		return this;
 	}
+	public boolean isUpdateButtonDispalyedAlert() {
+		return updatebutton.isDisplayed();
+	}
 }

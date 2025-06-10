@@ -17,5 +17,8 @@ public class Constant {
 	public static final String MANAGENEWSUPDATEBUTTONERROR = "error displaying update button in manage news page";
 	public static final String CREATENEWSERROR = "News was not created successfully";
 	public static final String DELETENEWSERROR = "News was not deleted successfully";
+	public static final String SAVEBUTTONNOTDISPLAYEDERRORMANAGENEWS = "save button is not displayed successfully";
+	public static final String UPDATEBUTTONNOTDISPLAYEDERRORMANAGEFOOTER = "update button is not displayed successfully";
+	public static final String LOGOUTDISPLAYEDERRORHOMEPAGE = "logout is displayed after logging out successfully";
 
 }

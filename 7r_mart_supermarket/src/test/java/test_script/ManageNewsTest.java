@@ -54,6 +54,8 @@ public class ManageNewsTest extends Base {
 		managenewspage = homepage.moreInfoManageNewsPage();
 		managenewspage.createnew().isSaveButtonDispalyed();
 		// managenewspage.isSaveButtonDispalyed();
+		boolean issavebuttondisplayed=managenewspage.isSaveButtonDisplayedAlert();
+		Assert.assertTrue(issavebuttondisplayed, Constant.SAVEBUTTONNOTDISPLAYEDERRORMANAGENEWS);
 	}
 
 	@Test(description = "verify whether the user is able to delete a news in the manage news page")
